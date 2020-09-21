@@ -8,6 +8,17 @@
 ```
 dependencies { implementation 'com.github.thekundankamal:textinputedittext:1.0' }
 ```
+
+**build.gradle**
+```
+allprojects {
+		repositories {...
+		maven { url 'https://jitpack.io' }
+		}
+}
+```
+
+
 ****Usage****
 
 XML
