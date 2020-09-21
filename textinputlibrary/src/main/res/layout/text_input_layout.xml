@@ -24,8 +24,6 @@
             android:paddingLeft="10dp"
             android:background="@android:color/transparent"
             android:hint="Enter you value"
-            android:inputType="number"
-            android:textColorHint="#000000"
             android:imeOptions="actionNext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

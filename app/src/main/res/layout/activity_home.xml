@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custome="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.thekundankamal.textinputedittext.TextInputEditText
+    <com.thekundankamal.textinputlibrary.TextInputEditText
         android:layout_margin="10dp"
         android:id="@+id/input_data"
-        custome:titleText="Hello"
-        custome:hintText="This is text input"
+        custome:titleText="Title"
+        custome:hintText="Enter your value"
         custome:titleTextSize="4sp"
-        custome:textSize="5sp"
-        custome:borderSelectedColor="@color/colorPrimaryDark"
+        custome:textSize="6sp"
+        custome:borderColor="@color/strokeColor"
+        custome:titleColor="@color/colorPrimaryDark"
+        custome:hintColor="@color/colorAccent"
+        custome:textColor="@color/colorPrimary"
+        custome:borderWidth="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.thekundankamal.textinputlibrary.TextInputEditText
+        android:layout_margin="10dp"
+        android:id="@+id/input_data_two"
+        custome:titleText="Title"
+        custome:hintText="Enter your value"
+        custome:titleTextSize="4sp"
+        custome:textSize="6sp"
         custome:borderColor="@color/strokeColor"
         custome:titleColor="@color/colorPrimaryDark"
         custome:hintColor="@color/colorAccent"

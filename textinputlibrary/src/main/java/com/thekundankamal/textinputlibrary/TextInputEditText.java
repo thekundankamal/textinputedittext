@@ -25,7 +25,7 @@ public class TextInputEditText extends RelativeLayout {
     public TextInputEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater layoutInflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=layoutInflater.inflate(R.layout.activity_main,this,true);
+        View view=layoutInflater.inflate(R.layout.text_input_layout,this,true);
         edData=view.findViewById(R.id.ed_edit_text);
         tvTitle=view.findViewById(R.id.tv_title);
         rlContainer=view.findViewById(R.id.rl_container);
@@ -37,7 +37,7 @@ public class TextInputEditText extends RelativeLayout {
         int textColor = typedArray.getColor(R.styleable.TextInputOption_textColor,getResources().getColor(android.R.color.holo_blue_light));
         float titleTextSize = typedArray.getDimension(R.styleable.TextInputOption_titleTextSize,2f);
         float textSize = typedArray.getDimension(R.styleable.TextInputOption_textSize,1f);
-        int maxLength = typedArray.getInt(R.styleable.TextInputOption_maxLength,10);
+        int maxLength = typedArray.getInt(R.styleable.TextInputOption_maxLength,100);
         final int borderWidth = typedArray.getInt(R.styleable.TextInputOption_borderWidth,3);
         final int borderColor = typedArray.getColor(R.styleable.TextInputOption_borderColor,getResources().getColor(R.color.strokeColor));
         final int borderSelectedColor = typedArray.getColor(R.styleable.TextInputOption_borderSelectedColor,getResources().getColor(R.color.strokeColor));
@@ -63,8 +63,8 @@ public class TextInputEditText extends RelativeLayout {
 
 
         //Set the content in attribute
-        edData.setHint(titleText);
-        tvTitle.setText(hintText);
+        edData.setHint(hintText);
+        tvTitle.setText(titleText);
         tvTitle.setTextColor(titleColor);
         tvTitle.setTextSize(titleTextSize);
         edData.setTextSize(textSize);
